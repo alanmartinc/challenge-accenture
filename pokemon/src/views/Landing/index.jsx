@@ -1,14 +1,14 @@
 import { Fragment } from "react";
-import ItemWelcomeContainer from "../../components/Items/ItemWelcomeContainer";
-import ItemFollowUsContainer from "../../components/Items/ItemFollowUsContainer";
-import ItemBenefitsContainer from "../../components/Items/ItemBenefitsContainer";
+import CardWelcomeContainer from "../../components/Cards/CardWelcomeContainer";
+import CardFollowUsContainer from "../../components/Cards/CardFollowUsContainer";
+import CardBenefitsContainer from "../../components/Cards/CardBenefitsContainer";
 
 export default function Landing() {
   return (
     <Fragment>
-      <ItemWelcomeContainer />
-      <ItemFollowUsContainer />
-      <ItemBenefitsContainer />
+      <CardWelcomeContainer />
+      <CardFollowUsContainer />
+      <CardBenefitsContainer />
     </Fragment>
   );
 }
