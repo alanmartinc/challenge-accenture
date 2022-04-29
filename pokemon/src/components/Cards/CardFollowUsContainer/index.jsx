@@ -1,7 +1,5 @@
-import CardFollowUs from './CardFollowUs'
+import CardFollowUs from './CardFollowUs';
 
-export default function CardFollowUsContainer () {
-  return (
-    <CardFollowUs />
-  )
+export default function CardFollowUsContainer() {
+	return <CardFollowUs />;
 }
