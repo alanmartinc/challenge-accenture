@@ -1,0 +1,14 @@
+{
+    "navbar": {
+        "home": "Inicio",
+        "benefits": "Beneficios",
+        "login": "Acceso"
+    },
+
+    "footer": {
+        "title": "Gracias por",
+        "span": "completar el ejercicio",
+        "subtitle": "Te invitamos a ver más información",
+        "button": "Conocer más"
+    }
+}

@@ -1,7 +1,10 @@
 import { Link } from "react-router-dom";
 import "./index.css";
+import { useTranslation } from "react-i18next";
 
 export default function Navbar() {
+    const [t, i18n] = useTranslation("global");
+
     return (
         <nav className="nav">
             <div className="logo">
@@ -10,18 +13,21 @@ export default function Navbar() {
 
             <div className="item-list">
                 <Link to={`/`}>
-                    Inicio
+                    {t("navbar.home")}
                 </Link>
 
                 <Link to={"/"}>
-                    Beneficios
+                    {t("navbar.benefits")}
                 </Link>
 
                 <Link to={"/login"}>
                     <button className="button-secondary">
-                        Login
+                        {t("navbar.login")}
                     </button>
                 </Link>
+
+                <button onClick={() => i18n.changeLanguage("es")}>ES</button>
+                <button onClick={() => i18n.changeLanguage("en")}>EN</button>
             </div>
         </nav>
     );

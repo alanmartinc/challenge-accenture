@@ -1,0 +1,19 @@
+{
+    "card-welcome": {
+        "title": "Bienvenido a tu",
+        "bold": "Entrevista Técnica en"
+    },
+
+    "card-benefits": {
+        "title": "Entre los beneficios que ofrecemos se encuentran"
+    },
+
+    "card-follow-us": {
+        "title": "350 +",
+        "subtitle-initial": "Trabajamos para",
+        "span-primary": "convertir",
+        "span-secondary": "ideas",
+        "subtitle-end": "en productos.",
+        "button": "Siguenos"
+    }
+}

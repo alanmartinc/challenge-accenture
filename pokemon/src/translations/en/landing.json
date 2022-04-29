@@ -1,0 +1,19 @@
+{
+    "card-welcome": {
+        "title": "Welcome to your",
+        "bold": "Technical Interview in"
+    },
+
+    "card-benefits": {
+        "title": "Among the benefits we offer are"
+    },
+
+    "card-follow-us": {
+        "title": "Three hundred and fifty +",
+        "subtitle-initial": "We work to",
+        "span-primary": "turn",
+        "span-secondary": "ideas",
+        "subtitle-end": "into products.",
+        "button": "Follow us"
+    }
+}
