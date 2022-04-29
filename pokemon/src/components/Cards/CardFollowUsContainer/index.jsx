@@ -1,5 +1,10 @@
 import CardFollowUs from './CardFollowUs';
+import ErorBundary from '../../ErrorBoundary';
 
 export default function CardFollowUsContainer() {
-	return <CardFollowUs />;
+	return (
+		<ErorBundary>
+			<CardFollowUs />
+		</ErorBundary>
+	);
 }

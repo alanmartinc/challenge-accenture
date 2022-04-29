@@ -10,5 +10,9 @@
 		"span": "completar el ejercicio",
 		"subtitle": "Te invitamos a ver más información",
 		"button": "Conocer más"
+	},
+
+	"errors": {
+		"404": "Vaya, no hemos podido encontrar la página que buscas."
 	}
 }

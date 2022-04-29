@@ -8,7 +8,9 @@ export default function Navbar() {
 	return (
 		<nav className='nav'>
 			<div className='logo'>
-				<img src='assets/logo_full_color.svg' alt='wolox-navbar' />
+				<Link to={'/'}>
+					<img src='assets/logo_full_color.svg' alt='wolox-navbar' />
+				</Link>
 			</div>
 
 			<div className='item-list'>

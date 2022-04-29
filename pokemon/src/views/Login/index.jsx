@@ -1,3 +1,9 @@
+import { Fragment } from 'react';
+
 export default function Login() {
-	return <h1>Login</h1>;
+	return (
+		<Fragment>
+			<h1>Login</h1>
+		</Fragment>
+	);
 }

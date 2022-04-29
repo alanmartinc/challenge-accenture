@@ -1,5 +1,10 @@
 import CardBenefits from './CardBenefits';
+import ErorBundary from '../../ErrorBoundary';
 
 export default function CardBenefitsContainer() {
-	return <CardBenefits />;
+	return (
+		<ErorBundary>
+			<CardBenefits />
+		</ErorBundary>
+	);
 }

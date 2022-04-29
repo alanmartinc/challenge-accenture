@@ -10,5 +10,9 @@
 		"span": "complete the exercise",
 		"subtitle": "We invite you to see more information",
 		"button": "Learn more"
+	},
+
+	"errors": {
+		"404": "Oops, we couldn't find the page you're looking for."
 	}
 }
