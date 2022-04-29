@@ -1,9 +1,9 @@
-import Footer from "../Footer";
-import Navbar from "../Navbar";
-import "./index.css";
+import Footer from '../Footer'
+import Navbar from '../Navbar'
+import './index.css'
 
-export default function Layout({children}) {
-    return (
+export default function Layout ({children}) {
+  return (
       <div className="layout">
           <div className="navbar">
               <Navbar />
@@ -13,6 +13,5 @@ export default function Layout({children}) {
               <Footer />
           </div>
       </div>
-    );
-  }
-  
+  )
+}

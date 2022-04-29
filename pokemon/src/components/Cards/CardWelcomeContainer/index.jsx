@@ -1,7 +1,7 @@
-import CardWelcome from "./CardWelcome";
+import CardWelcome from './CardWelcome'
 
-export default function CardWelcomeContainer() {
-    return (
+export default function CardWelcomeContainer () {
+  return (
         <CardWelcome />
-    );
+  )
 }

@@ -1,15 +1,13 @@
-import React from 'react';
-
 import {
-    BrowserRouter, Routes, Route
-} from "react-router-dom";
+  BrowserRouter, Routes, Route
+} from 'react-router-dom'
 
-import Layout from '../components/Layout';
-import Landing from '../views/Landing';
-import Login from '../views/Login';
+import Layout from '../components/Layout'
+import Landing from '../views/Landing'
+import Login from '../views/Login'
 
-export default function Router() {
-    return (
+export default function Router () {
+  return (
         <BrowserRouter>
             <Layout>
                 <Routes>
@@ -18,5 +16,5 @@ export default function Router() {
                 </Routes>
             </Layout>
         </BrowserRouter>
-    );
+  )
 }

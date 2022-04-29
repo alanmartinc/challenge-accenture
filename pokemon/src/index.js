@@ -1,28 +1,28 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import Router from './routes';
-import './index.css';
-import { I18nextProvider } from "react-i18next";
-import i18next from "i18next";
-import global_es from "./translations/es/global.json";
-import landing_es from "./translations/es/landing.json";
-import global_en from "./translations/en/global.json";
-import landing_en from "./translations/en/landing.json";
+import React from 'react'
+import ReactDOM from 'react-dom'
+import Router from './routes'
+import './index.css'
+import { I18nextProvider } from 'react-i18next'
+import i18next from 'i18next'
+import globalEs from './translations/es/global.json'
+import landingEs from './translations/es/landing.json'
+import globalEn from './translations/en/global.json'
+import landingEn from './translations/en/landing.json'
 
 i18next.init({
   interpolation: { escapeValue: false },
-  lng: "es",
+  lng: 'es',
   resources: {
     es: {
-      global: global_es,
-      landing: landing_es
+      global: globalEs,
+      landing: landingEs
     },
     en: {
-      global: global_en,
-      landing: landing_en
-    },
+      global: globalEn,
+      landing: landingEn
+    }
   }
-});
+})
 
 ReactDOM.render(
   <React.StrictMode>
@@ -31,4 +31,4 @@ ReactDOM.render(
     </I18nextProvider>
   </React.StrictMode>,
   document.getElementById('root')
-);
+)
