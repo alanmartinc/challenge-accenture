@@ -4,16 +4,19 @@ import {
     BrowserRouter, Routes, Route
 } from "react-router-dom";
 
-import Home from '../views/Home';
-import Benefits from '../views/Benefits';
+import Layout from '../components/Layout';
+import Landing from '../views/Landing';
+import Login from '../views/Login';
 
 export default function Router() {
     return (
         <BrowserRouter>
-            <Routes>
-                <Route exact path='/' element={<Home />} />
-                <Route exact path='/benefits' element={<Benefits />} />
-            </Routes>
+            <Layout>
+                <Routes>
+                    <Route exact path='/' element={<Landing />} />
+                    <Route exact path='/login' element={<Login />} />
+                </Routes>
+            </Layout>
         </BrowserRouter>
     );
 }

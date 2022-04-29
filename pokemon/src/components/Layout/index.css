@@ -1,0 +1,9 @@
+.content {
+    height: 100vh;
+}
+
+.background-footer {
+    background-image: url("../../../public/assets/Backgrounds/Bg_Footer.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}

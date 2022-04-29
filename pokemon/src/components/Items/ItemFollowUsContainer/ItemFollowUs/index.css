@@ -1,0 +1,9 @@
+.follow-us {
+    background-color: green;
+}
+
+.background-image {
+    background-image: url("../../../../../public/assets/img_woloxer.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
