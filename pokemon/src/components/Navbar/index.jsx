@@ -18,9 +18,9 @@ export default function Navbar() {
 
 				<Link to={'/'}>{t('navbar.benefits')}</Link>
 
-				<Link to={'/login'}>
-					<button className='button-secondary'>{t('navbar.login')}</button>
-				</Link>
+				<button className='button-secondary'>
+					<Link to={'/login'}>{t('navbar.login')}</Link>
+				</button>
 
 				<button onClick={() => i18n.changeLanguage('es')}>ES</button>
 				<button onClick={() => i18n.changeLanguage('en')}>EN</button>

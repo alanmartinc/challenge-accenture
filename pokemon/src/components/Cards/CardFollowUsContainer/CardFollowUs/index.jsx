@@ -20,7 +20,13 @@ export default function ItemFollowUs() {
 					</div>
 
 					<button className='button-secondary'>
-						{t('card-follow-us.button')}
+						<a
+							href='https://twitter.com/wolox?lang=es'
+							target='_blank'
+							rel='noreferrer'
+						>
+							{t('card-follow-us.button')}
+						</a>
 					</button>
 				</div>
 

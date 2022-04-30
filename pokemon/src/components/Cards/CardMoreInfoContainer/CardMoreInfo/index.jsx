@@ -13,7 +13,11 @@ export default function ItemMoreInfo() {
 			</h2>
 			<h3>{t('footer.subtitle')}</h3>
 
-			<button className='button-primary'>{t('footer.button')}</button>
+			<button className='button-primary'>
+				<a href='https://www.wolox.com.ar/' target='_blank' rel='noreferrer'>
+					{t('footer.button')}
+				</a>
+			</button>
 		</Fragment>
 	);
 }
