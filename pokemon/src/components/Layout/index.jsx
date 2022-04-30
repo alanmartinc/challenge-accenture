@@ -8,13 +8,13 @@ export default function Layout({ children }) {
 	return (
 		<div className='layout'>
 			<ErorBundary>
-				<div className='navbar'>
+				<div className='navbar-container'>
 					<Navbar />
 				</div>
 			</ErorBundary>
 
 			<div className='content'>{children}</div>
-			<div className='background-footer'>
+			<div className='footer-container'>
 				<Footer />
 			</div>
 		</div>

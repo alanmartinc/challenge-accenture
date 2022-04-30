@@ -6,14 +6,14 @@ export default function Navbar() {
 	const [t, i18n] = useTranslation('global');
 
 	return (
-		<nav className='nav'>
-			<div className='logo'>
+		<nav className='nav-container'>
+			<div className='nav-logo'>
 				<Link to={'/'}>
 					<img src='assets/logo_full_color.svg' alt='wolox-navbar' />
 				</Link>
 			</div>
 
-			<div className='item-list'>
+			<div className='nav-list'>
 				<Link to={'/'}>{t('navbar.home')}</Link>
 
 				<Link to={'/'}>{t('navbar.benefits')}</Link>

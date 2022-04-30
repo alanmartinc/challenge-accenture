@@ -1,9 +1,13 @@
-.follow-us {
+.follow-us-container {
 	background-color: green;
 }
 
-.background-image {
+.follow-us-image {
 	background-image: url('../../../../../public/assets/img_woloxer.png');
 	background-repeat: no-repeat;
 	background-size: cover;
+}
+
+.follow-us-background {
+	background-color: gray;
 }

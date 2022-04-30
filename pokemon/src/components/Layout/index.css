@@ -1,8 +1,4 @@
-.content {
-	height: 100vh;
-}
-
-.background-footer {
+.footer-container {
 	background-image: url('../../../public/assets/Backgrounds/Bg_Footer.png');
 	background-repeat: no-repeat;
 	background-size: cover;

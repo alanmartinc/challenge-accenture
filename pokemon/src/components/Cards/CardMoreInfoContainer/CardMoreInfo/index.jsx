@@ -9,7 +9,7 @@ export default function ItemMoreInfo() {
 		<Fragment>
 			<h2>
 				{t('footer.title')}{' '}
-				<span className='blue-highlight'>{t('footer.span')}</span>
+				<span className='more-info-blue'>{t('footer.span')}</span>
 			</h2>
 			<h3>{t('footer.subtitle')}</h3>
 

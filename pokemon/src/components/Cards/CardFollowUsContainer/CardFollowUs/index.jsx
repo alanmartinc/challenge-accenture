@@ -7,14 +7,14 @@ export default function ItemFollowUs() {
 
 	return (
 		<Fragment>
-			<div className='follow-us'>
-				<div className='background-image'>
+			<div className='follow-us-container'>
+				<div className='follow-us-image'>
 					<h1>
-						<span className='green-highlight'>{t('card-follow-us.title')}</span>{' '}
-						<span className='blue-highlight'>Woloxers</span>
+						<span className='follow-us-green'>{t('card-follow-us.title')}</span>{' '}
+						<span className='follow-us-blue'>Woloxers</span>
 					</h1>
 
-					<div>
+					<div className='follow-us-logo'>
 						<img src='assets/twitter.png' alt='twitter' />
 						<p>@Wolox</p>
 					</div>
@@ -24,13 +24,13 @@ export default function ItemFollowUs() {
 					</button>
 				</div>
 
-				<div className='background-gray'>
+				<div className='follow-us-background'>
 					<h2>
 						{t('card-follow-us.subtitle-initial')}{' '}
-						<span className='blue-highlight'>
+						<span className='follow-us-blue'>
 							{t('card-follow-us.span-primary')}
 						</span>{' '}
-						<span className='green-highlight'>
+						<span className='follow-us-green'>
 							{t('card-follow-us.span-secondary')}
 						</span>{' '}
 						{t('card-follow-us.subtitle-end')}
