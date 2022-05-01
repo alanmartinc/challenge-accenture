@@ -10,8 +10,8 @@ export default function ItemFollowUs() {
 			<div className='follow-us-container'>
 				<div className='follow-us-image'>
 					<h1>
-						<span className='follow-us-green'>{t('card-follow-us.title')}</span>{' '}
-						<span className='follow-us-blue'>Woloxers</span>
+						<span className='green-highlight'>{t('card-follow-us.title')}</span>{' '}
+						<span className='blue-highlight'>Woloxers</span>
 					</h1>
 
 					<div className='follow-us-logo'>
@@ -33,10 +33,10 @@ export default function ItemFollowUs() {
 				<div className='follow-us-background'>
 					<h2>
 						{t('card-follow-us.subtitle-initial')}{' '}
-						<span className='follow-us-blue'>
+						<span className='blue-highlight'>
 							{t('card-follow-us.span-primary')}
 						</span>{' '}
-						<span className='follow-us-green'>
+						<span className='green-highlight'>
 							{t('card-follow-us.span-secondary')}
 						</span>{' '}
 						{t('card-follow-us.subtitle-end')}

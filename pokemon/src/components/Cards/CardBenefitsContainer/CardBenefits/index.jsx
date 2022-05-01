@@ -9,7 +9,7 @@ export default function ItemBenefits() {
 		<Fragment>
 			<div className='benefits-container'>
 				<h3>
-					{t('card-benefits.title')} <span className='benefits-blue'>;)</span>
+					{t('card-benefits.title')} <span className='blue-highlight'>;)</span>
 				</h3>
 
 				<div className='benefits-items'>

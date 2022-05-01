@@ -8,8 +8,8 @@ export default function ItemMoreInfo() {
 	return (
 		<Fragment>
 			<h2>
-				{t('footer.title')}{' '}
-				<span className='more-info-blue'>{t('footer.span')}</span>
+				<b className='black-highlight'>{t('footer.title')} </b>
+				<span className='blue-highlight'>{t('footer.span')}</span>
 			</h2>
 			<h3>{t('footer.subtitle')}</h3>
 

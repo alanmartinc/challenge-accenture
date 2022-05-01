@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
-import './index.css';
 import { useTranslation } from 'react-i18next';
+import './index.css';
 
 export default function Navbar() {
 	const [t, i18n] = useTranslation('global');
@@ -24,6 +24,10 @@ export default function Navbar() {
 
 				<button onClick={() => i18n.changeLanguage('es')}>ES</button>
 				<button onClick={() => i18n.changeLanguage('en')}>EN</button>
+
+				<Link to={'/pokebola'}>
+					<img src='assets/pokebola.png' alt='pokebola' />
+				</Link>
 			</div>
 		</nav>
 	);

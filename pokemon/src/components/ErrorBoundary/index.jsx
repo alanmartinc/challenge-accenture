@@ -1,4 +1,5 @@
 import React from 'react';
+import './index.css';
 
 class ErorBundary extends React.Component {
 	constructor(props) {
@@ -20,7 +21,7 @@ class ErorBundary extends React.Component {
 		if (this.state.hasError) {
 			return (
 				<div>
-					<h1>Ooops... parece que algo salio mal. {this.state.messageError}</h1>
+					<h1>Ooops... parece que algo salio mal.</h1>
 					<button onClick={() => (window.location.href = '/')}>
 						Recargar la página{' '}
 					</button>
