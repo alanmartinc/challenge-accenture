@@ -10,5 +10,25 @@ body {
 
 ul,
 ol {
-	list-style: initial;
+	list-style: none;
+}
+.green-highlight{
+	color: #9fc739;
+}
+.blue-highlight{
+	color: #01a6e7;
+}
+.black-highlight{
+	color: black;
+	font-weight: bold;
+}
+.button-secondary {
+    border: none;
+	background: transparent;
+}
+button.button-secondary a{
+	color: #01a6e7;
+    padding: 6px 50px 6px 50px;
+    border: 1px solid #01a6e7;
+    border-radius: 17px;
 }

@@ -1,3 +1,20 @@
 .welcome-container {
-	background-color: red;
+	display: flex;
+	justify-content: space-between;
+	padding: 45px;
+	margin-top: 90px;
+}
+
+.welcome-title {
+    width: 300px;
+}
+.welcome-title h2{
+	font-size: 32px;
+	padding-top: 100px;
+}
+.img-welcome{
+	width: 50%;
+}
+.img-welcome img{
+	width: 80%;
 }
