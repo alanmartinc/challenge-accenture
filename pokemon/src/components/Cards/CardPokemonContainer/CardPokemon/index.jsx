@@ -18,7 +18,9 @@ export default function CardPokemon(props) {
 						})}
 					</div>
 
-					<img src='assets/pokebola.png' alt='pokebola' />
+					<button>
+						<img src='assets/pokebola.png' alt='pokebola' />
+					</button>
 				</div>
 
 				<div>
