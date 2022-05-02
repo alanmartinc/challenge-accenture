@@ -4,26 +4,29 @@
 	align-items: center;
 	position: fixed;
 	top: 0;
-    width: 100%;
+	width: 100%;
 	padding: 30px 45px;
 	background-color: white;
-
 }
+
 .nav-logo {
 	width: 200px;
 	height: auto;
 }
+
 .nav-logo a {
 	width: 100%;
 	display: block;
 }
-.nav-logo a img{
+
+.nav-logo a img {
 	width: 100%;
 	height: auto;
 }
+
 .nav-container .nav-list {
 	display: flex;
 	justify-content: space-around;
+	align-items: center;
 	width: 30%;
 }
-

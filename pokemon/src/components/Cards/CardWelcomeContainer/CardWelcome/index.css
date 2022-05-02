@@ -6,15 +6,18 @@
 }
 
 .welcome-title {
-    width: 300px;
+	width: 300px;
 }
-.welcome-title h2{
+
+.welcome-title h2 {
 	font-size: 32px;
 	padding-top: 100px;
 }
-.img-welcome{
+
+.img-welcome {
 	width: 50%;
 }
-.img-welcome img{
+
+.img-welcome img {
 	width: 80%;
 }

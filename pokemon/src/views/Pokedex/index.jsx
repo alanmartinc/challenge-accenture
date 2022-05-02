@@ -1,15 +1,28 @@
-import { Fragment, useEffect } from 'react';
+import { Fragment, useEffect, useState } from 'react';
 import ErorBundary from '.././../components/ErrorBoundary';
-import Pokemon from '../../components/Pokemon';
+import CardPokemonContainer from '../../components/Cards/CardPokemonContainer';
+import { getPokemon } from '../../utils/api';
+import './index.css';
 
 export default function Pokedex() {
+	const [pokemons, setPokemons] = useState([]);
+
+	const fetchPokemon = async () => {
+		try {
+			const data = await getPokemon();
+			setPokemons(data.results);
+		} catch (e) {
+			console.log(e);
+		}
+	};
 	useEffect(() => {
-		console.log('Inside useEffects');
+		fetchPokemon();
 	}, []);
+
 	return (
 		<Fragment>
 			<ErorBundary>
-				<Pokemon />
+				<CardPokemonContainer pokemons={pokemons} />
 			</ErorBundary>
 		</Fragment>
 	);

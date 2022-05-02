@@ -24,11 +24,11 @@ export default function Navbar() {
 
 				<button onClick={() => i18n.changeLanguage('es')}>ES</button>
 				<button onClick={() => i18n.changeLanguage('en')}>EN</button>
-			</div>
 
-			<Link to={'/pokebola'}>
-				<img src='assets/pokebola.png' alt='pokebola' />
-			</Link>
+				<Link to={'/pokebola'}>
+					<img src='assets/pokebola.png' alt='pokebola' />
+				</Link>
+			</div>
 		</nav>
 	);
 }
