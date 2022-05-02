@@ -1,8 +1,11 @@
 import { Fragment } from 'react';
 import SearchBox from '../../SearchBox';
 import Pagination from '../../Pagination';
+import CardPokemon from './CardPokemon';
 
-export default function CardPokemonContainer({ pokemons }) {
+export default function CardPokemonContainer(props) {
+	const { pokemons } = props;
+
 	return (
 		<Fragment>
 			<SearchBox />
@@ -10,11 +13,7 @@ export default function CardPokemonContainer({ pokemons }) {
 			<Pagination />
 
 			{pokemons.map((pokemon, i) => {
-				return (
-					<div key={pokemon.name}>
-						#{i + 1}: {pokemon.name}
-					</div>
-				);
+				return <CardPokemon pokemon={pokemon} key={pokemon.name} />;
 			})}
 		</Fragment>
 	);
