@@ -23,9 +23,7 @@ export default function Router() {
 	};
 
 	return (
-		<PokebolaProvider
-			value={{ pokebolaPokemons: pokebola, updatePokebola: updatePokebola }}
-		>
+		<PokebolaProvider value={{ pokebolaPokemons: pokebola, updatePokebola }}>
 			<BrowserRouter>
 				<Layout>
 					<Routes>

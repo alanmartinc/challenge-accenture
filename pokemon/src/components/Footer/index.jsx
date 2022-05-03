@@ -4,12 +4,16 @@ import './index.css';
 
 export default function Footer() {
 	return (
-		<div className='footer'>
-			<CardMoreInfoContainer />
+		<div className='footer-container'>
+			<div className='footer-align'>
+				<CardMoreInfoContainer />
 
-			<Link to={'/'}>
-				<img src='assets/Ic_Wolox_Footer.svg' alt='wolox-footer' />
-			</Link>
+				<div className='footer-logo'>
+					<Link to={'/'}>
+						<img src='assets/footer/Ic_Wolox_Footer.svg' alt='wolox-footer' />
+					</Link>
+				</div>
+			</div>
 		</div>
 	);
 }

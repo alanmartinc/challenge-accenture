@@ -1,10 +1,12 @@
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { searchPokemon } from '../../utils/api';
 import './index.css';
 
 export default function SearchBox() {
 	const [search, setSearch] = useState('');
 	const [pokemon, setPokemon] = useState();
+	const [t] = useTranslation('pokedex');
 
 	const handleOnChange = e => {
 		setSearch(e.target.value);
@@ -18,17 +20,17 @@ export default function SearchBox() {
 
 	return (
 		<div className='search-box-container'>
-			<h2 className='search-box-title'>Buscador</h2>
+			<h2 className='search-box-title'>{t('pokedex.title')}</h2>
 
 			<label>
 				<input
 					className='search-box-input'
-					placeholder='Ingrese un pokemon'
+					placeholder={t('pokedex.place-holder')}
 					onChange={handleOnChange}
 				/>
 			</label>
 
-			<button onClick={handleOnClick}>Buscar</button>
+			<button onClick={handleOnClick}>{t('pokedex.button')}</button>
 
 			{pokemon && (
 				<div>

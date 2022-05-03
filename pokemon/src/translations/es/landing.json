@@ -1,7 +1,8 @@
 {
 	"card-welcome": {
-		"title": "Bienvenido a tu",
-		"bold": "Entrevista Técnica en"
+		"title-initial": "Bienvenido a tu",
+		"bold": "Entrevista Técnica",
+		"title-end": "en"
 	},
 
 	"card-benefits": {

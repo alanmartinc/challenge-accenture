@@ -8,13 +8,14 @@ export default function ItemWelcome() {
 		<div className='welcome-container'>
 			<div className='welcome-title'>
 				<h2>
-					{t('card-welcome.title')}{' '}
+					{t('card-welcome.title-initial')}{' '}
 					<b className='black-highlight'>{t('card-welcome.bold')}</b>{' '}
+					{t('card-welcome.title-end')}{' '}
 					<span className='green-highlight'>Wolox</span>
 				</h2>
 			</div>
-			<div className='img-welcome'>
-				<img src='assets/Img Hero/Ic_ilustra_Hero.png' alt='hero' />
+			<div className='welcome-image'>
+				<img src='assets/header/Ic_ilustra_Hero@3x.png' alt='hero' />
 			</div>
 		</div>
 	);

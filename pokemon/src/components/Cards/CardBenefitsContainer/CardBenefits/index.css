@@ -1,18 +1,18 @@
 .benefits-container {
-	padding-top: 40px;
+	margin-top: 50px;
 }
 
 .benefits-container h3 {
 	text-align: center;
-	font-weight: 300;
+	font-weight: normal;
 	font-size: 24px;
 }
 
 .benefits-items {
 	display: flex;
-	justify-content: space-around;
+	justify-content: center;
 	width: 100%;
-	padding: 30px 40px 50px 40px;
+	padding: 50px 45px 50px 45px;
 	/*box-shadow: 1px 4px 9px 0px rgba(140,129,129,0.85);*/
 }
 
@@ -21,8 +21,18 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	padding-right: 20px;
+    padding-left: 20px;
+}
+
+.benefits-items ul img {
+	height: 60px;
+	width: 60px;
 }
 
 .benefits-items ul li {
-	margin-top: 15px;
+	margin-top: 20px;
+	text-align: center;
+	font-size: 16px;
+	width: 90px;
 }

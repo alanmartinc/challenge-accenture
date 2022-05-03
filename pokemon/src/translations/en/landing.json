@@ -1,7 +1,8 @@
 {
 	"card-welcome": {
-		"title": "Welcome to your",
-		"bold": "Technical Interview in"
+		"title-initial": "Welcome to your",
+		"bold": "Technical Interview",
+		"title-end": "in"
 	},
 
 	"card-benefits": {

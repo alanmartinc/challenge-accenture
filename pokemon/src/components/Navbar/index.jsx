@@ -12,7 +12,7 @@ export default function Navbar() {
 		<nav className='nav-container'>
 			<div className='nav-logo'>
 				<Link to={'/'}>
-					<img src='assets/logo_full_color.svg' alt='wolox-navbar' />
+					<img src='assets/navbar/logo_full_color.svg' alt='wolox-navbar' />
 				</Link>
 			</div>
 
@@ -25,13 +25,21 @@ export default function Navbar() {
 					<Link to={'/login'}>{t('navbar.login')}</Link>
 				</button>
 
-				<button onClick={() => i18n.changeLanguage('es')}>ES</button>
-				<button onClick={() => i18n.changeLanguage('en')}>EN</button>
-
 				<Link to={'/pokebola'}>
-					<img src='assets/pokebola.png' alt='pokebola' />{' '}
-					{pokebolaPokemons.length}
+					<div className='nav-pokebola'>
+						<img src='assets/navbar/pokebola.png' alt='pokebola' />{' '}
+						<div className='nav-pokebola-circle'>{pokebolaPokemons.length}</div>
+					</div>
 				</Link>
+
+				<div className='nav-translation'>
+					<button onClick={() => i18n.changeLanguage('es')}>
+						<img src='assets/navbar/spanish.png' alt='spanish' />
+					</button>
+					<button onClick={() => i18n.changeLanguage('en')}>
+						<img src='assets/navbar/english.png' alt='english' />
+					</button>
+				</div>
 			</div>
 		</nav>
 	);

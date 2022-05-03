@@ -1,10 +1,13 @@
+/* GLOBALS */
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
 
+/* GENERAL */
 body {
+	margin-top: 90px;
 	overflow-x: hidden;
 }
 
@@ -12,23 +15,69 @@ ul,
 ol {
 	list-style: none;
 }
+
+a {
+	text-decoration: none;
+}
+
+h1 {
+	font-size: 36px;
+	text-align: center;
+}
+
+h2 {
+	font-size: 32px;
+}
+
+/* GENERIC */
 .green-highlight {
 	color: #9fc739;
+	font-weight: 700;
 }
+
 .blue-highlight {
 	color: #01a6e7;
+	font-weight: 700;
 }
+
 .black-highlight {
 	color: black;
-	font-weight: bold;
+	font-weight: 700;
 }
+
 .button-secondary {
 	border: none;
 	background: transparent;
 }
-button.button-secondary a {
+
+.button-secondary a {
 	color: #01a6e7;
-	padding: 6px 50px 6px 50px;
+	padding: 10px 40px 10px 40px;
+	font-weight: 600;
 	border: 1px solid #01a6e7;
 	border-radius: 17px;
+}
+
+.button-secondary a:hover {
+	color: #fff;
+	background-color: #01a6e7;
+}
+
+.button-primary {
+	border: none;
+	background: transparent;
+}
+
+.button-primary a {
+	color: #fff;
+	padding: 10px 40px 10px 40px;
+	font-weight: 600;
+	border-radius: 17px;
+	background: #01a6e7;
+}
+
+.button-primary a:hover {
+	color: #01a6e7;
+	border: 1px solid #01a6e7;
+	background-color: transparent;
 }

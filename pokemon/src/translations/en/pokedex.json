@@ -1,0 +1,9 @@
+{
+	"pokedex": {
+		"title": "Seeker",
+		"place-holder": "Enter a pokemon",
+		"button": "Search for",
+		"button-previus": "Previous",
+		"button-next": "Next"
+	}
+}

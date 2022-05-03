@@ -15,7 +15,7 @@ export default function ItemFollowUs() {
 					</h1>
 
 					<div className='follow-us-logo'>
-						<img src='assets/twitter.png' alt='twitter' />
+						<img src='assets/follow-us/twitter.png' alt='twitter' />
 						<p>@Wolox</p>
 					</div>
 

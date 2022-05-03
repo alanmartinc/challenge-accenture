@@ -1,22 +1,18 @@
 import ErorBundary from '../ErrorBoundary';
 import Footer from '../Footer';
 import Navbar from '../Navbar';
-import './index.css';
 
 // eslint-disable-next-line react/prop-types
 export default function Layout({ children }) {
 	return (
 		<div className='layout'>
 			<ErorBundary>
-				<div className='navbar-container'>
-					<Navbar />
-				</div>
+				<Navbar />
 			</ErorBundary>
 
-			<div className='content'>{children}</div>
-			<div className='footer-container'>
-				<Footer />
-			</div>
+			{children}
+
+			<Footer />
 		</div>
 	);
 }

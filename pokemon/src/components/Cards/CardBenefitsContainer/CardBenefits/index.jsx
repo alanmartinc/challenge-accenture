@@ -14,32 +14,32 @@ export default function ItemBenefits() {
 
 				<div className='benefits-items'>
 					<ul>
-						<img src='assets/Ic_Hour.svg' alt='hour' />
+						<img src='assets/benefits/Ic_Hour.svg' alt='hour' />
 						<li>Flexibilidad Horaria</li>
 					</ul>
 
 					<ul>
-						<img src='assets/Ic_HomeOffice.svg' alt='home office' />
+						<img src='assets/benefits/Ic_HomeOffice.svg' alt='home office' />
 						<li>Home Office</li>
 					</ul>
 
 					<ul>
-						<img src='assets/Ic_Workshops.svg' alt='workshops' />
+						<img src='assets/benefits/Ic_Workshops.svg' alt='workshops' />
 						<li>Capacitaciones y workshops</li>
 					</ul>
 
 					<ul>
-						<img src='assets/Ic_DrinkSnacks.svg' alt='drink snacks' />
+						<img src='assets/benefits/Ic_DrinkSnacks.svg' alt='drink snacks' />
 						<li>Snacks, frutas y bebidas gratis</li>
 					</ul>
 
 					<ul>
-						<img src='assets/Ic_laptop.svg' alt='laptop' />
+						<img src='assets/benefits/Ic_laptop.svg' alt='laptop' />
 						<li>Semana Remota</li>
 					</ul>
 
 					<ul>
-						<img src='assets/Ic_brain.svg' alt='brain' />
+						<img src='assets/benefits/Ic_brain.svg' alt='brain' />
 						<li>Trabajar en ultimas tecnologías</li>
 					</ul>
 				</div>
