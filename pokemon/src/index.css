@@ -1,9 +1,4 @@
 /*------------------------------------*\
-	Fonts
-\*------------------------------------*/
-
-
-/*------------------------------------*\
 	Colors - Borders - Backgrounds - 
 	Typography - Font Size, Weight
 \*------------------------------------*/
@@ -11,6 +6,7 @@
 	/* --- Colors --- */
 	--color-green: #9fc739;
 	--color-blue: #01a6e7;
+	--color-red: rgb(255, 0, 0);
 	--color-white: #ffffff;
 	--color-black: #111111;
 
@@ -24,11 +20,9 @@
 	--bg-green: #9fc739;
 	--bg-blue: #01a6e7;
 	--bg-lightblue: #ebf8fd;
+	--bg-red: rgb(255, 0, 0);
 	--bg-white: #ffffff;
 	--bg-transparent: transparent;
-
-	/* --- Typography --- */
-	
 
 	/* --- Font size --- */
 	--fs-alpha: 12px;
@@ -76,6 +70,7 @@ h1 {
 
 h2 {
 	font-size: var(--fs-eta);
+	text-align: center;
 }
 
 /* GENERIC */

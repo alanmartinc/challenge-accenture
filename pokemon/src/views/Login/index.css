@@ -1,9 +1,83 @@
+/*------------------------------------*\
+	Login
+\*------------------------------------*/
 .login-container {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    margin-top: 9rem;
+    margin-bottom: 9rem;
+    margin-inline: auto;
+    max-width: 500px;
+    overflow-y: none;
+    height: fit-content;
+    background-color: var(--bg-white);
+}
+
+.login-design {
     display: flex;
     justify-content: center;
-    flex-direction: column;
     text-align: center;
+}
+
+.login-data {
+    width: 70%;
+}
+
+.login-wolox img {
+    width: 100px;
+}
+
+.login-portada img {
+    width: 260px;
+}
+
+.container-alert-error {
+    margin-top: 8px;
+}
+
+.container-alert-error .alert-error {
+    color: var(--color-white);
+    font-size: 10px;
+    background-color: var(--bg-red);
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.login-form .button-primary {
+    margin-top: 32px;
+}
+
+.input-group {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
+}
+
+.input-group label {
+    color: var(--color-black);
+    margin-bottom: 4px;
+}
+
+.input-group input {
+    padding: 4px;
+    border: 1px solid var(--border-black);
+    border-radius: 5px;
+}
+
+.container-helper-error {
+    margin-top: 4px;
+}
+
+.container-helper-error .helper-error {
+    color: var(--color-red);
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.container-helper-error .helper-error img {
+    padding-right: 4px;
 }
 
 /*------------------------------------*\
@@ -105,4 +179,15 @@
     left: 35%;
     animation-duration: 3s;
     animation-delay: 4s;
+}
+
+/*------------------------------------*\
+	Responsive
+\*------------------------------------*/
+@media screen and (min-width: 600px ) {
+    /* --- Login --- */
+    .login-container {
+        border-radius: 2rem;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    }
 }

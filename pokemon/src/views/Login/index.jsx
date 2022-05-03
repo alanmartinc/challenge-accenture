@@ -1,5 +1,6 @@
 import { Fragment, useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 import './index.css';
 
 export default function Login() {
@@ -65,41 +66,82 @@ export default function Login() {
 			</div>
 
 			<div className='login-container'>
-				{isLogin ? <h1>{t('Bienvenido!')}</h1> : <h1>{t('login.title')}</h1>}
+				<div className='login-design'>
+					<div className='login-data'>
+						<div className='login-wolox'>
+							<Link to={'/'}>
+								<img
+									src='assets/navbar/logo_full_color.svg'
+									alt='wolox-login'
+								/>
+							</Link>
+						</div>
 
-				{alertError && (
-					<span className='alert-error'>
-						Su contraseña es inválida o incompleta
-					</span>
-				)}
+						<div className='login-portada'>
+							<img src='assets/login/portada.png' alt='portada' />
+						</div>
 
-				<label htmlFor='user'>Usuario</label>
-				<input
-					type='text'
-					id='user'
-					name='user'
-					placeholder='Ingrese el usuario'
-					onChange={e => handleOnChange(e.target.name, e.target.value)}
-					required
-				/>
+						{isLogin ? (
+							<h2>
+								{t('Bienvenido')} {user}
+							</h2>
+						) : (
+							<h2>{t('login.title')}</h2>
+						)}
 
-				<label htmlFor='password'>Contraseña</label>
-				<input
-					type='password'
-					id='password'
-					name='password'
-					placeholder='Ingrese su contraseña'
-					onChange={e => handleOnChange(e.target.name, e.target.value)}
-					required
-				/>
+						<div className='container-alert-error'>
+							{alertError && (
+								<span className='alert-error'>
+									Su contraseña es inválida o incompleta
+								</span>
+							)}
+						</div>
 
-				{helperError && (
-					<label className='helper-error'>
-						Su contraseña debe tener 6 carácteres
-					</label>
-				)}
+						<form action='#' className='login-form'>
+							<div className='input-group'>
+								<label htmlFor='user' className='input-fill'>
+									Usuario
+								</label>
+								<input
+									type='text'
+									id='user'
+									name='user'
+									placeholder='Ingrese el usuario'
+									onChange={e => handleOnChange(e.target.name, e.target.value)}
+									required
+								/>
+							</div>
 
-				<button onClick={handleOnClick}>Ingresar</button>
+							<div className='input-group'>
+								<label htmlFor='password'>Contraseña</label>
+								<input
+									type='password'
+									id='password'
+									name='password'
+									placeholder='Ingrese su contraseña'
+									onChange={e => handleOnChange(e.target.name, e.target.value)}
+									required
+								/>
+
+								<div className='container-helper-error'>
+									{helperError && (
+										<label className='helper-error'>
+											<img
+												src='assets/login/warning-red.png'
+												alt='warning-red'
+											/>
+											Su contraseña debe tener 6 carácteres
+										</label>
+									)}
+								</div>
+							</div>
+
+							<button className='button-primary' onClick={handleOnClick}>
+								<Link to={'/pokedex'}>Ingresar</Link>
+							</button>
+						</form>
+					</div>
+				</div>
 			</div>
 		</Fragment>
 	);

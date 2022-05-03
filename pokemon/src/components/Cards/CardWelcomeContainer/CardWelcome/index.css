@@ -15,6 +15,7 @@
 	font-size: var(--fs-eta);
 	font-weight: var(--fw-normal);
 	padding-top: 100px;
+	text-align: left;
 }
 
 .welcome-image {
