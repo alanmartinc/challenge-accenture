@@ -25,7 +25,7 @@ export default function Navbar() {
 					<Link to={'/login'}>{t('navbar.login')}</Link>
 				</button>
 
-				<Link to={'/pokebola'}>
+				<Link to={'/pokedex'}>
 					<div className='nav-pokebola'>
 						<img src='assets/navbar/pokebola.png' alt='pokebola' />{' '}
 						<div className='nav-pokebola-circle'>{pokebolaPokemons.length}</div>

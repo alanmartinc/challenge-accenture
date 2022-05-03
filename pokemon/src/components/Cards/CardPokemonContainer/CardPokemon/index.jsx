@@ -26,7 +26,7 @@ export default function CardPokemon(props) {
 					</div>
 
 					<button onClick={handleClickPokebola}>
-						<img src='assets/pokebola.png' alt='pokebola' />
+						<img src='assets/navbar/pokebola.png' alt='pokebola' />
 					</button>
 				</div>
 
