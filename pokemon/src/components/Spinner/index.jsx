@@ -6,7 +6,7 @@ export default function Spinner() {
 		<div className='spinner'>
 			<Backdrop
 				invisible={true}
-				sx={{ color: '#111', zIndex: theme => theme.zIndex.drawer + 1 }}
+				sx={{ color: '#01a6e7', zIndex: theme => theme.zIndex.drawer + 1 }}
 				open
 			>
 				<CircularProgress color='inherit' />
