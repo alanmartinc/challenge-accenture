@@ -28,7 +28,7 @@ export default function Navbar() {
 				<Link to={'/pokedex'}>
 					<div className='nav-pokebola'>
 						<img src='assets/navbar/pokebola.png' alt='pokebola' />{' '}
-						<div className='nav-pokebola-circle'>{pokebolaPokemons.length}</div>
+						<div>{pokebolaPokemons.length}</div>
 					</div>
 				</Link>
 

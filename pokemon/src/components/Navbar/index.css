@@ -47,21 +47,6 @@
 	padding-right: 4px;
 }
 
-.nav-pokebola-circle {
-	border-radius: 50%;
-	background-color: var(--bg-blue);
-	color: var(--color-white);
-	font-size: var(--fs-alpha);
-	width: 20px;
-	height: 20px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	position: absolute;
-	top: 46px;
-	right: 113px;
-}
-
 .nav-translation button {
 	border: var(--border-transparent);
 	background: var(--bg-transparent);

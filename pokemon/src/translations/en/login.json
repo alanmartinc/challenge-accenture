@@ -1,5 +1,13 @@
 {
 	"login": {
-		"title": "Login"
+		"title-initial": "Login",
+		"title-end": "Welcome",
+		"alert-error": "Your password is invalid or incomplete",
+		"label-user": "User",
+		"label-password": "Password",
+		"placeholder-user": "Enter your user",
+		"placeholder-password": "Enter your password",
+		"helper-error": "Your password must have 6 characters",
+		"button": "To accept"
 	}
 }

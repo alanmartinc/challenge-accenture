@@ -83,42 +83,40 @@ export default function Login() {
 
 						{isLogin ? (
 							<h2>
-								{t('Bienvenido')} {user}
+								{t('login.title-end')} {user}
 							</h2>
 						) : (
-							<h2>{t('login.title')}</h2>
+							<h2>{t('login.title-initial')}</h2>
 						)}
 
 						<div className='container-alert-error'>
 							{alertError && (
-								<span className='alert-error'>
-									Su contraseña es inválida o incompleta
-								</span>
+								<span className='alert-error'>{t('login.alert-error')}</span>
 							)}
 						</div>
 
 						<form action='#' className='login-form'>
 							<div className='input-group'>
 								<label htmlFor='user' className='input-fill'>
-									Usuario
+									{t('login.label-user')}
 								</label>
 								<input
 									type='text'
 									id='user'
 									name='user'
-									placeholder='Ingrese el usuario'
+									placeholder={t('login.placeholder-user')}
 									onChange={e => handleOnChange(e.target.name, e.target.value)}
 									required
 								/>
 							</div>
 
 							<div className='input-group'>
-								<label htmlFor='password'>Contraseña</label>
+								<label htmlFor='password'>{t('login.label-password')}</label>
 								<input
 									type='password'
 									id='password'
 									name='password'
-									placeholder='Ingrese su contraseña'
+									placeholder={t('login.placeholder-password')}
 									onChange={e => handleOnChange(e.target.name, e.target.value)}
 									required
 								/>
@@ -130,14 +128,14 @@ export default function Login() {
 												src='assets/login/warning-red.png'
 												alt='warning-red'
 											/>
-											Su contraseña debe tener 6 carácteres
+											{t('login.helper-error')}
 										</label>
 									)}
 								</div>
 							</div>
 
 							<button className='button-primary' onClick={handleOnClick}>
-								<Link to={'/pokedex'}>Ingresar</Link>
+								<Link to={'#'}>{t('login.button')}</Link>
 							</button>
 						</form>
 					</div>

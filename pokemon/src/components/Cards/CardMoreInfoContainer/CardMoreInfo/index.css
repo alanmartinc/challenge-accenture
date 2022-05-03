@@ -6,9 +6,6 @@
 }
 
 .more-info-container h3 {
-    text-align: center;
-    font-weight: normal;
-    font-size: var(--fs-epsilon);
     margin-top: 8px;
     margin-bottom: 32px;
 }

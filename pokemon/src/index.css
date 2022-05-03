@@ -73,6 +73,11 @@ h2 {
 	text-align: center;
 }
 
+h3 {
+	font-size: var(--fs-epsilon);
+	text-align: center;
+}
+
 /* GENERIC */
 .green-highlight {
 	color: var(--color-green);
@@ -100,6 +105,7 @@ h2 {
 	font-weight: var(--fw-medium);
 	border: 1px solid var(--border-blue);
 	border-radius: 17px;
+	font-size: var(--fs-beta);
 }
 
 .button-secondary a:hover {
@@ -118,10 +124,28 @@ h2 {
 	font-weight: var(--fw-medium);
 	border-radius: 17px;
 	background: var(--bg-blue);
+	font-size: var(--fs-beta);
 }
 
 .button-primary a:hover {
 	color: var(--color-blue);
 	border: 1px solid var(--border-blue);
 	background: var(--bg-transparent);
+}
+
+/*------------------------------------*\
+	Responsive
+\*------------------------------------*/
+@media screen and (max-width: 600px ) {
+    h2 {
+        font-size: var(--fs-epsilon);
+    }
+
+    h3 {
+        font-size: var(--fs-gamma);
+    }
+
+	.button-primary a, .button-secondary a {
+		font-size: var(--fs-alpha);
+	}
 }

@@ -1,5 +1,13 @@
 {
 	"login": {
-		"title": "Acceso"
+		"title-initial": "Acceso",
+		"title-end": "Bienvenido",
+		"alert-error": "Su contraseña es inválida o incompleta",
+		"label-user": "Usuario",
+		"label-password": "Contraseña",
+		"placeholder-user": "Ingrese su usuario",
+		"placeholder-password": "Ingrese su contraseña",
+		"helper-error": "Su contraseña debe tener 6 carácteres",
+		"button": "Aceptar"
 	}
 }
