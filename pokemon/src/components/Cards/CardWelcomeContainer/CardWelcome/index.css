@@ -12,8 +12,8 @@
 }
 
 .welcome-title h2 {
-	font-size: 32px;
-	font-weight: normal;
+	font-size: var(--fs-eta);
+	font-weight: var(--fw-normal);
 	padding-top: 100px;
 }
 

@@ -6,7 +6,7 @@
 	top: 0;
 	width: 100%;
 	padding: 30px 45px;
-	background-color: #fff;
+	background-color: var(--bg-white);
 }
 
 .nav-logo {
@@ -29,7 +29,7 @@
 	padding-right: 20px;
 	padding-left: 20px;
 	align-items: center;
-	font-weight: 600;
+	font-weight: var(--fw-medium);
 }
 
 .nav-pokebola {
@@ -43,9 +43,9 @@
 
 .nav-pokebola-circle {
 	border-radius: 50%;
-	background-color: #01a6e7;
-	color: #fff;
-	font-size: 12px;
+	background-color: var(--bg-blue);
+	color: var(--color-white);
+	font-size: var(--fs-alpha);
 	width: 20px;
 	height: 20px;
 	display: flex;
@@ -57,8 +57,8 @@
 }
 
 .nav-translation button {
-	border: transparent;
-	background: transparent;
+	border: var(--border-transparent);
+	background: var(--bg-transparent);
 	padding-right: 4px;
 	cursor: pointer;
 }

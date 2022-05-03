@@ -4,8 +4,8 @@
 
 .benefits-container h3 {
 	text-align: center;
-	font-weight: normal;
-	font-size: 24px;
+	font-weight: var(--fw-normal);
+	font-size: var(--fs-epsilon);
 }
 
 .benefits-items {
@@ -13,7 +13,6 @@
 	justify-content: center;
 	width: 100%;
 	padding: 50px 45px 50px 45px;
-	/*box-shadow: 1px 4px 9px 0px rgba(140,129,129,0.85);*/
 }
 
 .benefits-items ul {
@@ -33,6 +32,6 @@
 .benefits-items ul li {
 	margin-top: 20px;
 	text-align: center;
-	font-size: 16px;
+	font-size: var(--fs-gamma);
 	width: 90px;
 }

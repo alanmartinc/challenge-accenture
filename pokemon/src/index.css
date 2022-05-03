@@ -1,3 +1,52 @@
+/*------------------------------------*\
+	Fonts
+\*------------------------------------*/
+
+
+/*------------------------------------*\
+	Colors - Borders - Backgrounds - 
+	Typography - Font Size, Weight
+\*------------------------------------*/
+:root {
+	/* --- Colors --- */
+	--color-green: #9fc739;
+	--color-blue: #01a6e7;
+	--color-white: #ffffff;
+	--color-black: #111111;
+
+	/* --- Borders --- */
+	--border-green: #9fc739;
+	--border-blue: #01a6e7;
+	--border-black: #111111;
+	--border-transparent: transparent;
+
+	/* --- Backgrounds --- */
+	--bg-green: #9fc739;
+	--bg-blue: #01a6e7;
+	--bg-lightblue: #ebf8fd;
+	--bg-white: #ffffff;
+	--bg-transparent: transparent;
+
+	/* --- Typography --- */
+	
+
+	/* --- Font size --- */
+	--fs-alpha: 12px;
+	--fs-beta: 14px;
+	--fs-gamma: 16px;
+	--fs-delta: 18px;
+	--fs-epsilon: 24px;
+	--fs-zeta: 30px;
+	--fs-eta: 32px;
+	--fs-theta: 36px;
+	
+	/* --- Font weight --- */
+	--fw-normal: 400;
+	--fw-medium: 600;
+	--fw-bold: 700;
+}
+
+
 /* GLOBALS */
 * {
 	margin: 0;
@@ -21,63 +70,63 @@ a {
 }
 
 h1 {
-	font-size: 36px;
+	font-size: var(--fs-theta);
 	text-align: center;
 }
 
 h2 {
-	font-size: 32px;
+	font-size: var(--fs-eta);
 }
 
 /* GENERIC */
 .green-highlight {
-	color: #9fc739;
-	font-weight: 700;
+	color: var(--color-green);
+	font-weight: var(--fw-bold);
 }
 
 .blue-highlight {
-	color: #01a6e7;
-	font-weight: 700;
+	color: var(--color-blue);
+	font-weight: var(--fw-bold);
 }
 
 .black-highlight {
-	color: black;
-	font-weight: 700;
+	color: var(--color-black);
+	font-weight: var(--fw-bold);
 }
 
 .button-secondary {
 	border: none;
-	background: transparent;
+	background: var(--bg-transparent);
 }
 
 .button-secondary a {
-	color: #01a6e7;
+	color: var(--color-blue);
 	padding: 10px 40px 10px 40px;
-	font-weight: 600;
-	border: 1px solid #01a6e7;
+	font-weight: var(--fw-medium);
+	border: 1px solid var(--border-blue);
 	border-radius: 17px;
 }
 
 .button-secondary a:hover {
-	color: #fff;
-	background-color: #01a6e7;
+	color: var(--color-white);
+	background-color: var(--bg-blue);
 }
 
 .button-primary {
 	border: none;
-	background: transparent;
+	background: var(--bg-transparent);
 }
 
 .button-primary a {
-	color: #fff;
+	color: var(--color-white);
 	padding: 10px 40px 10px 40px;
-	font-weight: 600;
+	font-weight: var(--fw-medium);
 	border-radius: 17px;
-	background: #01a6e7;
+	background: var(--bg-blue);
 }
 
 .button-primary a:hover {
-	color: #01a6e7;
-	border: 1px solid #01a6e7;
-	background-color: transparent;
+	color: var(--color-blue);
+	border: 1px solid var(--border-blue);
+	background: var(--bg-transparent);
 }

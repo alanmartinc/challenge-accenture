@@ -22,14 +22,14 @@
 }
 
 .follow-us-logo p {
-	color: #fff;
-    font-size: 14px;
-	font-weight: normal;
+	color: var(--color-white);
+    font-size: var(--fs-beta);
+	font-weight: var(--fw-normal);
 	padding-left: 8px;
 }
 
 .follow-us-image .button-secondary a {
-	color: #fff;
+	color: var(--color-white);
 }
 
 .follow-us-background {
@@ -37,13 +37,13 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: #ebf8fd;
+	background-color: var(--bg-lightblue);
 }
 
 .follow-us-background h2 {
 	text-align: center;
 	width: 300px;
-	font-weight: 500;
+	font-weight: var(--fw-normal);
 }
 
 
