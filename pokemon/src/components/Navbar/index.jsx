@@ -1,9 +1,12 @@
 import { Link } from 'react-router-dom';
-import './index.css';
 import { useTranslation } from 'react-i18next';
+import { useContext } from 'react';
+import PokebolaContext from '../../contexts/pokebolaContext';
+import './index.css';
 
 export default function Navbar() {
 	const [t, i18n] = useTranslation('global');
+	const { pokebolaPokemons } = useContext(PokebolaContext);
 
 	return (
 		<nav className='nav-container'>
@@ -26,7 +29,8 @@ export default function Navbar() {
 				<button onClick={() => i18n.changeLanguage('en')}>EN</button>
 
 				<Link to={'/pokebola'}>
-					<img src='assets/pokebola.png' alt='pokebola' />
+					<img src='assets/pokebola.png' alt='pokebola' />{' '}
+					{pokebolaPokemons.length}
 				</Link>
 			</div>
 		</nav>

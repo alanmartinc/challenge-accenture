@@ -1,7 +1,14 @@
-import { Fragment } from 'react';
+import { Fragment, useContext } from 'react';
+import PokebolaContext from '../../../../contexts/pokebolaContext';
 
 export default function CardPokemon(props) {
 	const { pokemon } = props;
+	const { updatePokebola } = useContext(PokebolaContext);
+
+	const handleClickPokebola = e => {
+		e.preventDefault();
+		updatePokebola(pokemon.name);
+	};
 
 	return (
 		<Fragment>
@@ -18,7 +25,7 @@ export default function CardPokemon(props) {
 						})}
 					</div>
 
-					<button>
+					<button onClick={handleClickPokebola}>
 						<img src='assets/pokebola.png' alt='pokebola' />
 					</button>
 				</div>
