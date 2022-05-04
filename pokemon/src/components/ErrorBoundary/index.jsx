@@ -27,7 +27,10 @@ class ErorBundary extends React.Component {
 
 						<h3>Oops, parece que algo salio mal.</h3>
 
-						<img src='assets/code-errors/404.png' alt='error boundary' />
+						<img
+							src='assets/error-boundary/fixing-bugs.png'
+							alt='error boundary'
+						/>
 
 						<button className='button-secondary'>
 							<Link to={'/'}>Recargar la página</Link>

@@ -1,3 +1,3 @@
 export default function Example() {
-	return <h1>hola</h1>;
+	return <h1 className='example'>hola</h1>;
 }
