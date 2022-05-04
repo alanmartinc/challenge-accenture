@@ -3,6 +3,7 @@ import SearchBox from '../../SearchBox';
 import Pagination from '../../Pagination';
 import CardPokemon from './CardPokemon';
 import Spinner from '../../Spinner';
+import './styles.css';
 
 export default function CardPokemonContainer(props) {
 	const { pokemons, pagination, setPagination, count, loading } = props;
@@ -23,7 +24,7 @@ export default function CardPokemonContainer(props) {
 			{loading ? (
 				<Spinner />
 			) : (
-				<div>
+				<div className='pokemon-align'>
 					{pokemons.map((pokemon, i) => {
 						return <CardPokemon pokemon={pokemon} key={pokemon.name} />;
 					})}

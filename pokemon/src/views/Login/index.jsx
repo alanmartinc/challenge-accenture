@@ -2,7 +2,7 @@ import { Fragment, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import ErrorBoundary from '../../components/ErrorBoundary';
-import './globals.css';
+import './styles.css';
 
 export default function Login() {
 	const [t] = useTranslation('login');

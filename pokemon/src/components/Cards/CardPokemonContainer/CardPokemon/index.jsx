@@ -1,5 +1,6 @@
 import { Fragment, useContext } from 'react';
 import PokebolaContext from '../../../../contexts/pokebolaContext';
+import './styles.css';
 
 export default function CardPokemon(props) {
 	const { pokemon } = props;
@@ -12,26 +13,24 @@ export default function CardPokemon(props) {
 
 	return (
 		<Fragment>
-			<div>
-				<div>
-					<p>{pokemon.name}</p>
-					<div>#{pokemon.id}</div>
-				</div>
+			<div className='pokemon-container'>
+				<div className='pokemon-body'>
+					<div className='pokemon-name'>
+						<p>{pokemon.name}</p>
 
-				<div>
-					<div>
+						<button onClick={handleClickPokebola}>
+							<img src='assets/navbar/pokebola.png' alt='pokebola' />
+						</button>
+					</div>
+
+					<img src={pokemon.sprites.front_default} alt={pokemon.name} />
+
+					<div className='pokemon-details'>
+						<p>Detalles: </p>
 						{pokemon.types.map((type, i) => {
 							return <div key={i}>{type.type.name}</div>;
 						})}
 					</div>
-
-					<button onClick={handleClickPokebola}>
-						<img src='assets/navbar/pokebola.png' alt='pokebola' />
-					</button>
-				</div>
-
-				<div>
-					<img src={pokemon.sprites.front_default} alt={pokemon.name} />
 				</div>
 			</div>
 		</Fragment>
