@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 import { searchPokemon } from '../../utils/api';
 import './styles.css';
 
@@ -22,20 +23,26 @@ export default function SearchBox() {
 		<div className='search-box-container'>
 			<h2 className='search-box-title'>{t('pokedex.title')}</h2>
 
-			<label>
+			<div className='search-box-input-group'>
 				<input
-					className='search-box-input'
+					type='text'
+					id='pokemons'
+					name='pokemons'
 					placeholder={t('pokedex.place-holder')}
 					onChange={handleOnChange}
+					required
 				/>
-			</label>
+			</div>
 
-			<button onClick={handleOnClick}>{t('pokedex.button')}</button>
+			<div className='search-box-button'>
+				<button className='button-primary' onClick={handleOnClick}>
+					<Link to={'#'}>{t('pokedex.button')}</Link>
+				</button>
+			</div>
 
 			{pokemon && (
-				<div>
+				<div className='search-box-pokemon'>
 					<p>Nombre: {pokemon.name}</p>
-					<p>Peso: {pokemon.weight}</p>
 					<img src={pokemon.sprites.front_default} alt='pokemons' />
 				</div>
 			)}
