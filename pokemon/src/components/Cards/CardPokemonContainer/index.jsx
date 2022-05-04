@@ -20,8 +20,6 @@ export default function CardPokemonContainer(props) {
 	return (
 		<Fragment>
 			<SearchBox />
-			<div className='pokedex-container'>Pokemon</div>
-
 			{loading ? (
 				<Spinner />
 			) : (

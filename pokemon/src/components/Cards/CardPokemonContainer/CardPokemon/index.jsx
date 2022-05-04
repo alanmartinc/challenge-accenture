@@ -14,7 +14,7 @@ export default function CardPokemon(props) {
 		<Fragment>
 			<div>
 				<div>
-					<h3>{pokemon.name}</h3>
+					<p>{pokemon.name}</p>
 					<div>#{pokemon.id}</div>
 				</div>
 

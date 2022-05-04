@@ -4,6 +4,7 @@
 	align-items: center;
 	position: fixed;
 	top: 0;
+	left: 0;
 	width: 100%;
 	padding: 30px 45px;
 	background-color: var(--bg-white);
@@ -37,7 +38,6 @@
 	color: var(--color-blue);
 }
 
-
 .nav-pokebola {
 	display: flex;
 	align-items: center;
@@ -52,4 +52,33 @@
 	background: var(--bg-transparent);
 	padding-right: 4px;
 	cursor: pointer;
+}
+
+/*------------------------------------*\
+	Responsive
+\*------------------------------------*/
+@media screen and (max-width: 800px ) {
+    .nav-logo {
+		display: none;
+	}
+
+	.nav-container {
+		justify-content: center;
+	}
+}
+
+@media screen and (max-width: 600px ) {
+	.nav-container {
+		padding: 30px 10px;
+	}
+
+	.nav-list a {
+		padding-right: 10px;
+		padding-left: 10px;
+		font-size: var(--fs-beta);
+	}
+
+    .nav-translation button {
+		display: none;
+	}
 }

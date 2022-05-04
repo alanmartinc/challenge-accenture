@@ -1,7 +1,8 @@
 import { Fragment, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
-import './index.css';
+import ErrorBoundary from '../../components/ErrorBoundary';
+import './globals.css';
 
 export default function Login() {
 	const [t] = useTranslation('login');
@@ -53,94 +54,100 @@ export default function Login() {
 
 	return (
 		<Fragment>
-			<div className='burbujas'>
-				<div className='burbuja'></div>
-				<div className='burbuja'></div>
-				<div className='burbuja'></div>
-				<div className='burbuja'></div>
-				<div className='burbuja'></div>
-				<div className='burbuja'></div>
-				<div className='burbuja'></div>
-				<div className='burbuja'></div>
-				<div className='burbuja'></div>
-			</div>
+			<ErrorBoundary>
+				<div className='burbujas'>
+					<div className='burbuja'></div>
+					<div className='burbuja'></div>
+					<div className='burbuja'></div>
+					<div className='burbuja'></div>
+					<div className='burbuja'></div>
+					<div className='burbuja'></div>
+					<div className='burbuja'></div>
+					<div className='burbuja'></div>
+					<div className='burbuja'></div>
+				</div>
 
-			<div className='login-container'>
-				<div className='login-design'>
-					<div className='login-data'>
-						<div className='login-wolox'>
-							<Link to={'/'}>
-								<img
-									src='assets/navbar/logo_full_color.svg'
-									alt='wolox-login'
-								/>
-							</Link>
-						</div>
+				<div className='login-container'>
+					<div className='login-design'>
+						<div className='login-data'>
+							<div className='login-wolox'>
+								<Link to={'/'}>
+									<img
+										src='assets/navbar/logo_full_color.svg'
+										alt='wolox-login'
+									/>
+								</Link>
+							</div>
 
-						<div className='login-portada'>
-							<img src='assets/login/portada.png' alt='portada' />
-						</div>
+							<div className='login-portada'>
+								<img src='assets/login/portada.png' alt='portada' />
+							</div>
 
-						{isLogin ? (
-							<h2>
-								{t('login.title-end')} {user}
-							</h2>
-						) : (
-							<h2>{t('login.title-initial')}</h2>
-						)}
-
-						<div className='container-alert-error'>
-							{alertError && (
-								<span className='alert-error'>{t('login.alert-error')}</span>
+							{isLogin ? (
+								<h2>
+									{t('login.title-end')} {user}
+								</h2>
+							) : (
+								<h2>{t('login.title-initial')}</h2>
 							)}
-						</div>
 
-						<form action='#' className='login-form'>
-							<div className='input-group'>
-								<label htmlFor='user' className='input-fill'>
-									{t('login.label-user')}
-								</label>
-								<input
-									type='text'
-									id='user'
-									name='user'
-									placeholder={t('login.placeholder-user')}
-									onChange={e => handleOnChange(e.target.name, e.target.value)}
-									required
-								/>
+							<div className='container-alert-error'>
+								{alertError && (
+									<span className='alert-error'>{t('login.alert-error')}</span>
+								)}
 							</div>
 
-							<div className='input-group'>
-								<label htmlFor='password'>{t('login.label-password')}</label>
-								<input
-									type='password'
-									id='password'
-									name='password'
-									placeholder={t('login.placeholder-password')}
-									onChange={e => handleOnChange(e.target.name, e.target.value)}
-									required
-								/>
-
-								<div className='container-helper-error'>
-									{helperError && (
-										<label className='helper-error'>
-											<img
-												src='assets/login/warning-red.png'
-												alt='warning-red'
-											/>
-											{t('login.helper-error')}
-										</label>
-									)}
+							<form action='#' className='login-form'>
+								<div className='input-group'>
+									<label htmlFor='user' className='input-fill'>
+										{t('login.label-user')}
+									</label>
+									<input
+										type='text'
+										id='user'
+										name='user'
+										placeholder={t('login.placeholder-user')}
+										onChange={e =>
+											handleOnChange(e.target.name, e.target.value)
+										}
+										required
+									/>
 								</div>
-							</div>
 
-							<button className='button-primary' onClick={handleOnClick}>
-								<Link to={'#'}>{t('login.button')}</Link>
-							</button>
-						</form>
+								<div className='input-group'>
+									<label htmlFor='password'>{t('login.label-password')}</label>
+									<input
+										type='password'
+										id='password'
+										name='password'
+										placeholder={t('login.placeholder-password')}
+										onChange={e =>
+											handleOnChange(e.target.name, e.target.value)
+										}
+										required
+									/>
+
+									<div className='container-helper-error'>
+										{helperError && (
+											<label className='helper-error'>
+												<img
+													src='assets/login/warning-red.png'
+													alt='warning-red'
+												/>
+												{t('login.helper-error')}
+											</label>
+										)}
+									</div>
+								</div>
+
+								<button className='button-primary' onClick={handleOnClick}>
+									<Link to={'#'}>{t('login.button')}</Link>
+								</button>
+							</form>
+						</div>
 					</div>
 				</div>
-			</div>
+			</ErrorBoundary>
 		</Fragment>
 	);
 }

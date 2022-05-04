@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import './index.css';
+import './styles.css';
 
 export default function ItemWelcome() {
 	const [t] = useTranslation('landing');

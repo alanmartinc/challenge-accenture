@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { searchPokemon } from '../../utils/api';
-import './index.css';
+import './styles.css';
 
 export default function SearchBox() {
 	const [search, setSearch] = useState('');

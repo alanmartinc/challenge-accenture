@@ -1,6 +1,6 @@
 import { Fragment } from 'react';
 import { useTranslation } from 'react-i18next';
-import './index.css';
+import './styles.css';
 
 export default function ItemBenefits() {
 	const [t] = useTranslation('landing');
@@ -13,32 +13,32 @@ export default function ItemBenefits() {
 				</h3>
 
 				<div className='benefits-items'>
-					<ul>
+					<ul className='one'>
 						<img src='assets/benefits/Ic_Hour.svg' alt='hour' />
 						<li>Flexibilidad Horaria</li>
 					</ul>
 
-					<ul>
+					<ul className='two'>
 						<img src='assets/benefits/Ic_HomeOffice.svg' alt='home office' />
 						<li>Home Office</li>
 					</ul>
 
-					<ul>
+					<ul className='three'>
 						<img src='assets/benefits/Ic_Workshops.svg' alt='workshops' />
 						<li>Capacitaciones y workshops</li>
 					</ul>
 
-					<ul>
+					<ul className='four'>
 						<img src='assets/benefits/Ic_DrinkSnacks.svg' alt='drink snacks' />
 						<li>Snacks, frutas y bebidas gratis</li>
 					</ul>
 
-					<ul>
+					<ul className='five'>
 						<img src='assets/benefits/Ic_laptop.svg' alt='laptop' />
 						<li>Semana Remota</li>
 					</ul>
 
-					<ul>
+					<ul className='six'>
 						<img src='assets/benefits/Ic_brain.svg' alt='brain' />
 						<li>Trabajar en ultimas tecnologías</li>
 					</ul>

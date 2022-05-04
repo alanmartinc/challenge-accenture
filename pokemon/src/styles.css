@@ -137,8 +137,12 @@ h3 {
 	Responsive
 \*------------------------------------*/
 @media screen and (max-width: 600px ) {
+	h1 {
+		font-size: var(--fs-zeta);
+	}
+
     h2 {
-        font-size: var(--fs-epsilon);
+        font-size: var(--fs-delta);
     }
 
     h3 {

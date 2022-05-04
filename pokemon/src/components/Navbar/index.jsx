@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { useContext } from 'react';
 import PokebolaContext from '../../contexts/pokebolaContext';
-import './index.css';
+import './styles.css';
 
 export default function Navbar() {
 	const [t, i18n] = useTranslation('global');

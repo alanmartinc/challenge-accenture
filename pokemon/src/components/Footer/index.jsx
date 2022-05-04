@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import CardMoreInfoContainer from '../Cards/CardMoreInfoContainer';
-import './index.css';
+import './styles.css';
 
 export default function Footer() {
 	return (

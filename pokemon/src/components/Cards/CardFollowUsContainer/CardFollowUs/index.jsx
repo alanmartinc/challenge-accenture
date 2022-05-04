@@ -1,6 +1,6 @@
 import { Fragment } from 'react';
 import { useTranslation } from 'react-i18next';
-import './index.css';
+import './styles.css';
 
 export default function ItemFollowUs() {
 	const [t] = useTranslation('landing');

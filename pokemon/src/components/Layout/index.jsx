@@ -1,6 +1,7 @@
 import ErorBundary from '../ErrorBoundary';
 import Footer from '../Footer';
 import Navbar from '../Navbar';
+import './styles.css';
 
 // eslint-disable-next-line react/prop-types
 export default function Layout({ children }) {
@@ -10,7 +11,7 @@ export default function Layout({ children }) {
 				<Navbar />
 			</ErorBundary>
 
-			{children}
+			<div className='content'>{children}</div>
 
 			<Footer />
 		</div>

@@ -12,7 +12,8 @@
 		"button": "Conocer más"
 	},
 
-	"errors": {
-		"404": "Vaya, no hemos podido encontrar la página que buscas."
+	"code-errors": {
+		"404": "Vaya, no hemos podido encontrar la página que buscas.",
+		"button": "Volver"
 	}
 }

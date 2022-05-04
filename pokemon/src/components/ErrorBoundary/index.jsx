@@ -1,5 +1,6 @@
-import React from 'react';
-import './index.css';
+import React, { Fragment } from 'react';
+import { Link } from 'react-router-dom';
+import './styles.css';
 
 class ErorBundary extends React.Component {
 	constructor(props) {
@@ -20,12 +21,19 @@ class ErorBundary extends React.Component {
 	render() {
 		if (this.state.hasError) {
 			return (
-				<div>
-					<h1>Ooops... parece que algo salio mal.</h1>
-					<button onClick={() => (window.location.href = '/')}>
-						Recargar la página{' '}
-					</button>
-				</div>
+				<Fragment>
+					<div className='error-boundary-container'>
+						<h2>Error Boundary</h2>
+
+						<h3>Oops, parece que algo salio mal.</h3>
+
+						<img src='assets/code-errors/404.png' alt='error boundary' />
+
+						<button className='button-secondary'>
+							<Link to={'/'}>Recargar la página</Link>
+						</button>
+					</div>
+				</Fragment>
 			);
 		}
 
